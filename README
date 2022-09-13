@@ -1,1 +1,6 @@
-Hola
+
+plot 'fuerza.dat' using 3:4 title 'Tierra'
+f(x)=a*x
+a=1
+fit f(x) 'fuerza.dat' using 3:4 via a
+plot 'fuerza.dat' using 3:4 title 'Tierra',7.92951e+44*x title 'Recta de ajuste'
